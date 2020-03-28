@@ -1,0 +1,30 @@
+.navbar-container {
+    height: 80px; 
+    display: flex;
+    align-items: center;   
+}
+
+.nav-item-container {
+    list-style: none;
+    display: flex;
+    flex-direction: row;  
+    font-size: 12px;
+    font-family: "Helvetica Neue","Arial","sans-serif";
+    font-weight: 700;
+    font-style: normal;
+    line-height: 3.6em;
+    letter-spacing: .28em;
+    text-transform: uppercase;
+    padding: 35px 0 25px 0;
+    margin: 0 0 0 35px;
+    max-width: 49%;    
+}
+
+.nav-item {
+    margin-right: 2rem;
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+    text-decoration: none;
+}
+
