@@ -1,0 +1,13 @@
+.feature-outer-wrapper {
+    display: flex;
+
+}
+
+.feature-image {
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
