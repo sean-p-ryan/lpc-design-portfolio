@@ -1,0 +1,23 @@
+.about-wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items: top;
+    width: 80vw;
+    margin: 100px auto;
+}
+
+.headshot {
+    background: url('../../img/lpc-headshot.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 270px;
+    width: 270px;    
+}
+
+.about-description {
+    width: 50%;
+}
+
+.reach-out {
+    margin-top: 25px;
+}
