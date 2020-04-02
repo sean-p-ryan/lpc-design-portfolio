@@ -1,4 +1,7 @@
+@import "../../styles/base.scss";
+
 .about-wrapper {
+    @include typography-body;
     display: flex;
     justify-content: space-around;
     align-items: top;
@@ -10,12 +13,13 @@
     background: url('../../img/lpc-headshot.jpg');
     background-size: cover;
     background-position: center;
-    height: 270px;
-    width: 270px;    
+    height: 30vw;
+    width: 30vw;    
 }
 
 .about-description {
     width: 50%;
+
 }
 
 .reach-out {
