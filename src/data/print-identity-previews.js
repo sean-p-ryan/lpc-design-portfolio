@@ -21,13 +21,20 @@ const printIdentityPreviews = {
       description:
         "<p>Rockaway ConneX is a digital platform designed to connect the visitors and inhabitants of Rockaway with desired information, goods and services of the peninsula.</p> <p>It was important to the creators of this product that ConneX be spelled with an “X” to allude to the crossroads, connecting functionality of their platform.</p> <p>This ultimately inspired the concept for the logo, as two arrows intersecting to create the X further visualizes its intended meaning, as well as the fundamental purpose of the platform.</p> <p>Both the arrows and the X then became central elements of the larger identity, often being combined with images and illustrations of the  physical things this platform connects users to: food, fun, activities, beach needs, and other people.</p>",
       images: [
-        ["pi-ft-rockaway-1.jpg"],
-        ["pi-ft-rockaway-2.jpg"],
-        [
-          "pi-ft-rockaway-3a.jpg",
-          "pi-ft-rockaway-3b.jpg",
-          "pi-ft-rockaway-3c.jpg"
-        ]
+        { path: ["pi-ft-rockaway-1.jpg"] },
+        { path: ["pi-ft-rockaway-2.jpg"] },
+        {
+          path: [
+            "pi-ft-rockaway-3a.jpg",
+            "pi-ft-rockaway-3b.jpg",
+            "pi-ft-rockaway-3c.jpg"
+          ],
+          width: "30%",
+          height: "45vw"
+        },
+        { path: ["pi-ft-rockaway-4.jpg"] },
+        { path: ["pi-ft-rockaway-5a.jpg", "pi-ft-rockaway-5b.jpg"] },
+        { path: ["pi-ft-rockaway-6.jpg"] }
       ]
     }
   },

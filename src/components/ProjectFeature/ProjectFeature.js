@@ -20,32 +20,41 @@ class ProjectFeature extends React.Component {
           <div className="description-text" ref="descriptionText"></div>
         </div>
         <div className="images-wrapper">
-          {data.feature.images.map(imageArray => {
+          {data.feature.images.map((image, i) => {
             return (
               <div
                 className={
-                  imageArray.length === 1
+                  image.path.length === 1
                     ? "single-feature-image-wrapper"
                     : "multi-feature-image-wrapper"
                 }
+                style={
+                  image.path.length > 1
+                    ? {
+                        height: `${image.height}`
+                      }
+                    : { height: "70vw"}
+                }
+                key={i}
               >
-                {imageArray.map((image, i) => {
-                  const background = require(`../../img/${image}`);                  
+                {image.path.map((imagePath, i) => {
+                  const background = require(`../../img/${imagePath}`);
+                  console.log(image)
                   return (
                     <div
-                    className={
-                      imageArray.length === 1
-                        ? "single-image-container"
-                        : "multi-image-container"
-                    }
+                      className={
+                        image.path.length === 1
+                          ? "single-image-container"
+                          : "multi-image-container"
+                      }
                       key={i}
                       style={
-                        imageArray.length === 1
-                          ? { backgroundImage: `url('${background}')`}
-                          : 
-                          { backgroundImage: `url('${background}')`,
-                            width: `${100/imageArray.length - 2}%`
-                          }
+                        image.path.length === 1
+                          ? { backgroundImage: `url('${background}')` }
+                          : {
+                              backgroundImage: `url('${background}')`,
+                              width: `${image.width}`
+                            }
                       }
                     ></div>
                   );
