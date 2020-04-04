@@ -49,3 +49,38 @@
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.nav-arrow-container {
+    display: flex;
+    justify-content: center;
+    height: 38px;
+
+}
+
+.last, .home, .next {
+    height: 100%;
+    width: 38px;
+    text-align: center;
+    background-color: #2e2e2e;
+    border: 1px solid black;
+    cursor: pointer;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: black;
+    &:hover {
+        opacity: 0.5;
+    }
+}
+
+.last {
+    background-image: url('../../icons/arrow-left.svg');
+}
+
+.home {
+    margin: 0 2px;
+    background-image: url('../../icons/home.svg');
+}
+
+.next {
+    background-image: url('../../icons/arrow-right.svg');
+}
