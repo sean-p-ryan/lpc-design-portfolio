@@ -1,9 +1,10 @@
 import React from "react";
 import "./project-feature.scss";
+import "./rockaway.scss";
 
 class ProjectFeature extends React.Component {
   constructor(props) {
-    super(props);
+    super(props);    
   }
 
   componentDidMount() {
@@ -12,7 +13,8 @@ class ProjectFeature extends React.Component {
   }
 
   render() {
-    const data = this.props.data[this.props.match.params.id];
+    const data = this.props.data[this.props.match.params.id];    
+    console.log('heres data' + data.title)
     return (
       <div className="feature-outer-wrapper">
         <div className="description">
@@ -21,23 +23,18 @@ class ProjectFeature extends React.Component {
         </div>
         <div className="images-wrapper">
           {data.feature.images.map((image, i) => {
+            console.log(image)
             return (
               <div
                 className={
                   image.path.length === 1
                     ? "single-feature-image-wrapper"
                     : "multi-feature-image-wrapper"
-                }
-                style={
-                  image.style
-                    ? {
-                        height: `${image.style.height}`
-                      }
-                    : {}
-                }
-                key={i}
+                }                
+                key={i}  
+                id={`${data.id}-wrapper-${i + 1}`}                              
               >
-                {image.path.map((imagePath, i) => {
+                {image.path.map((imagePath, k) => {
                   const background = require(`../../img/${imagePath}`);
                   return (
                     <div
@@ -47,15 +44,8 @@ class ProjectFeature extends React.Component {
                           : "multi-image-container"
                       }
                       key={i}
-                      style={
-                        image.style
-                          ? {
-                              backgroundImage: `url('${background}')`,
-                              height: `${image.style.height}`,
-                              width: `${image.style.width}`
-                            }
-                          : {backgroundImage: `url('${background}')`}
-                      }
+                      style={{backgroundImage: `url(${background})`}}
+                      id={`${data.id}-wrapper-${i + 1}-image-${k + 1}`}
                     ></div>
                   );
                 })}
