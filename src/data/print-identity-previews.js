@@ -19,22 +19,15 @@ const printIdentityPreviews = {
     backgroundImage: "pi-preview-rockaway.jpg",
     feature: {
       description:
-        "<p>Rockaway ConneX is a digital platform designed to connect the visitors and inhabitants of Rockaway with desired information, goods and services of the peninsula. It was important to the creators of this product that ConneX be spelled with an “X” to allude to the crossroads, connecting functionality of their platform</p>. <p>This ultimately inspired the concept for the logo, as two arrows intersecting to create the X further visualizes its intended meaning, as well as the fundamental purpose of the platform.</p> <p>Both the arrows and the X then became central elements of the larger identity, often being combined with images and illustrations of the  physical things this platform connects users to: food, fun, activities, beach needs, and other people.</p>",
+        "<p>Rockaway ConneX is a digital platform designed to connect the visitors and inhabitants of Rockaway with desired information, goods and services of the peninsula.</p> <p>It was important to the creators of this product that ConneX be spelled with an “X” to allude to the crossroads, connecting functionality of their platform.</p> <p>This ultimately inspired the concept for the logo, as two arrows intersecting to create the X further visualizes its intended meaning, as well as the fundamental purpose of the platform.</p> <p>Both the arrows and the X then became central elements of the larger identity, often being combined with images and illustrations of the  physical things this platform connects users to: food, fun, activities, beach needs, and other people.</p>",
       images: [
-        "pi-ft-rockaway-1.jpg",
-        "pi-ft-rockaway-2.jpg",
-        "pi-ft-rockaway-3a.jpg",
-        "pi-ft-rockaway-3b.jpg",
-        "pi-ft-rockaway-3c.jpg",
-        "pi-ft-rockaway-4.jpg",
-        "pi-ft-rockaway-5.jpg",
-        "pi-ft-rockaway-6a.jpg",
-        "pi-ft-rockaway-6b.jpg",
-        "pi-ft-rockaway-7.jpg",
-        "pi-ft-rockaway-8.jpg",
-        "pi-ft-rockaway-9.jpg",
-        "pi-ft-rockaway-10a.jpg",
-        "pi-ft-rockaway-10b.jpg"
+        ["pi-ft-rockaway-1.jpg"],
+        ["pi-ft-rockaway-2.jpg"],
+        [
+          "pi-ft-rockaway-3a.jpg",
+          "pi-ft-rockaway-3b.jpg",
+          "pi-ft-rockaway-3c.jpg"
+        ]
       ]
     }
   },

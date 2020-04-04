@@ -11,3 +11,7 @@ body {
     font-style: normal;
     color: #212121;
 }
+
+p {
+    margin: 0 0 1.25em;
+}

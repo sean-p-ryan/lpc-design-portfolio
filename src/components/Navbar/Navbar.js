@@ -12,9 +12,9 @@ class Navbar extends React.Component {
   }
 
   componentDidMount() {
+    this.setInitialState()
     window.addEventListener("resize", this.setLargeWidthNav.bind(this));
-    window.addEventListener("click", this.setLargeWidthNav.bind(this));
-    this.setInitialState.bind(this)
+    window.addEventListener("click", this.setLargeWidthNav.bind(this));    
   }
 
   setInitialState() {    
@@ -25,8 +25,7 @@ class Navbar extends React.Component {
     }
   }
 
-  setLargeWidthNav(event) {
-    console.log(event.type)
+  setLargeWidthNav(event) {    
     if (window.innerWidth >= 640) {
       this.setState({ mobileNavHidden: false })
     } else if (window.innerWidth < 640 && event.type == "resize")  {
@@ -63,7 +62,7 @@ class Navbar extends React.Component {
             onClick={this.handleClick}
             activeClassName="selected"
             className="nav-item"
-            exact
+            exact            
             to="/"
           >
             COVERS
@@ -71,8 +70,7 @@ class Navbar extends React.Component {
           <NavLink
             onClick={this.handleClick}
             activeClassName="selected"
-            className="nav-item"
-            exact
+            className="nav-item"            
             to="/work"
           >
             PRINT & IDENTITY

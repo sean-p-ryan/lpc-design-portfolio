@@ -1,5 +1,5 @@
 import React from "react";
-import "./project-preview.css";
+import "./project-preview.scss";
 import styled from "styled-components";
 
 class ProjectPreview extends React.Component {
@@ -12,12 +12,7 @@ class ProjectPreview extends React.Component {
     const backgroundImage = require(`../../img/${data.backgroundImage}`);
 
     let projectPreviewStyle = {
-      width: "33.33vw",
-      height: "25vw",
       backgroundImage: `url(${backgroundImage})`,
-      backgroundPosition: "center",
-      backgroundSize: "cover",
-      backgroundRepeat: "no-repeat"
     };
 
     const HoverText = styled.p`

@@ -6,6 +6,7 @@
     font-weight: 400;
     font-style: normal;
     color: $color-gray;
+    line-height: 1.4em;
   }
 
   @mixin typography-accent {
@@ -13,5 +14,15 @@
     font-family: "Helvetica Neue","Arial","sans-serif";
     font-weight: 400;
     font-style: normal;
+    color: $color-black;
+  }
+
+  @mixin typography-feature-title {
+    font-size: 14px;
+    font-family: "Helvetica Neue","Arial","sans-serif";
+    font-weight: 700;
+    font-style: normal;
+    line-height: 1.2em;
+    letter-spacing: 0px;
     color: $color-black;
   }

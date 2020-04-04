@@ -9,3 +9,21 @@
       @content;
     }
   }
+
+  @mixin twoAcross {
+    @media (min-width: #{$bp-two-across}) {
+      @content;
+    }
+  }
+
+  @mixin threeAcross {
+    @media (min-width: #{$bp-three-across}) {
+      @content;
+    }
+  }
+
+  @mixin fourAcross {
+    @media (min-width: #{$bp-four-across}) {
+      @content;
+    }
+  }
