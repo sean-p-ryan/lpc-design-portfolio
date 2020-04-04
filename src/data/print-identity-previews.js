@@ -29,12 +29,14 @@ const printIdentityPreviews = {
             "pi-ft-rockaway-3b.jpg",
             "pi-ft-rockaway-3c.jpg"
           ],
-          width: "30%",
-          height: "45vw"
+          style: { width: "30%", height: "45vw" }
         },
-        { path: ["pi-ft-rockaway-4.jpg"] },
-        { path: ["pi-ft-rockaway-5a.jpg", "pi-ft-rockaway-5b.jpg"] },
-        { path: ["pi-ft-rockaway-6.jpg"] }
+        { path: ["pi-ft-rockaway-4.jpg"], style: { height: "59vw" } },
+        { path: ["pi-ft-rockaway-5a.jpg", "pi-ft-rockaway-5b.jpg"], style: {width: "49%"} },
+        { path: ["pi-ft-rockaway-6.jpg"] },
+        { path: ["pi-ft-rockaway-7.jpg"] },
+        { path: ["pi-ft-rockaway-8.jpg"] },
+        { path: ["pi-ft-rockaway-9a.jpg", "pi-ft-rockaway-9b.jpg"], style: {width: "49%"} }
       ]
     }
   },

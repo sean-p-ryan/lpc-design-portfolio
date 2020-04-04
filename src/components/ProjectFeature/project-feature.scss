@@ -27,6 +27,7 @@
 
 .multi-feature-image-wrapper {
     width: 95vw; 
+    height: 70vw;   
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -43,6 +44,7 @@
 
 .multi-image-container {
     height: 100%;
+    width: 33%;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;

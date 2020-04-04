@@ -29,17 +29,16 @@ class ProjectFeature extends React.Component {
                     : "multi-feature-image-wrapper"
                 }
                 style={
-                  image.path.length > 1
+                  image.style
                     ? {
-                        height: `${image.height}`
+                        height: `${image.style.height}`
                       }
-                    : { height: "70vw"}
+                    : {}
                 }
                 key={i}
               >
                 {image.path.map((imagePath, i) => {
                   const background = require(`../../img/${imagePath}`);
-                  console.log(image)
                   return (
                     <div
                       className={
@@ -49,12 +48,13 @@ class ProjectFeature extends React.Component {
                       }
                       key={i}
                       style={
-                        image.path.length === 1
-                          ? { backgroundImage: `url('${background}')` }
-                          : {
+                        image.style
+                          ? {
                               backgroundImage: `url('${background}')`,
-                              width: `${image.width}`
+                              height: `${image.style.height}`,
+                              width: `${image.style.width}`
                             }
+                          : {backgroundImage: `url('${background}')`}
                       }
                     ></div>
                   );
