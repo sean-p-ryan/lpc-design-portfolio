@@ -1,8 +1,7 @@
 import React from "react";
 import ProjectPreview from "../../components/ProjectPreview/ProjectPreview";
 import printIdentityData from "../../data/print-identity-previews";
-import { Link } from "react-router-dom";
-import "./print-identity.css";
+import "./print-identity.scss";
 
 class PrintIdentity extends React.Component {
   constructor(props) {

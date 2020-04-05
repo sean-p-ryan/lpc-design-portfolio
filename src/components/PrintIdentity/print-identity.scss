@@ -1,0 +1,14 @@
+@import "../../styles/base.scss";
+
+.wrapper {
+  display: none;
+  z-index: 5;
+  position: relative;
+}
+
+@include large {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

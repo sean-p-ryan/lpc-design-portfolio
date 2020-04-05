@@ -1,6 +1,7 @@
 import React from "react";
 import "./project-feature.scss";
-import "./rockaway.scss";
+import "./project-styles/rockaway.scss";
+import "./project-styles/cma.scss";
 
 class ProjectFeature extends React.Component {
   constructor(props) {
@@ -13,33 +14,32 @@ class ProjectFeature extends React.Component {
   }
 
   render() {
-    const data = this.props.data[this.props.match.params.id];    
-    console.log('heres data' + data.title)
+    const data = this.props.data[this.props.match.params.id];  
     return (
       <div className="feature-outer-wrapper">
         <div className="description">
           <div className="description-title">{data.title}</div>
           <div className="description-text" ref="descriptionText"></div>
         </div>
-        <div className="images-wrapper">
-          {data.feature.images.map((image, i) => {
-            console.log(image)
-            return (
+        <div id={`${data.id}-images-wrapper`}    className="images-wrapper">
+          {data.feature.images.map((imageSet, i) => {     
+            console.log(imageSet)       
+            return (              
               <div
                 className={
-                  image.path.length === 1
+                  imageSet.length === 1
                     ? "single-feature-image-wrapper"
                     : "multi-feature-image-wrapper"
                 }                
                 key={i}  
                 id={`${data.id}-wrapper-${i + 1}`}                              
               >
-                {image.path.map((imagePath, k) => {
+                {imageSet.map((imagePath, k) => {
                   const background = require(`../../img/${imagePath}`);
                   return (
                     <div
                       className={
-                        image.path.length === 1
+                        imageSet.length === 1
                           ? "single-image-container"
                           : "multi-image-container"
                       }
