@@ -41,7 +41,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <div className="navbar-container">
-        <div onClick={this.handleClick} className="mobile-nav-menu">MENU</div>
+        <div onClick={this.handleClick} className="mobile-nav-menu"><span id="menu">MENU</span></div>
         <div         
           className={
             (this.state.mobileNavHidden) ?
