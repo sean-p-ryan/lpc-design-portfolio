@@ -1,7 +1,8 @@
 @import "../../styles/base.scss";
 
 .wrapper {
-  display: none;
+  display: flex;
+  flex-wrap: wrap;
   z-index: 5;
   position: relative;
 }

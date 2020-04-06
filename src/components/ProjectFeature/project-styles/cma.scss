@@ -1,18 +1,20 @@
 @import "../../../styles/base.scss";
 
-#cma-wrapper-1 {
-    width: 77vw;
-    margin: 100px auto;
+#cma-single-feature-image-wrapper-1 {
+  width: 77vw;
+  margin: 100px auto;
 }
 
 @include large {
-    #cma-wrapper-1 {
-        width: 100%;
-        height: 50vw;
-        margin: 20px 0;
-    }
-    #cma-wrapper-1-image-1 {
-        width: 30vw;
-        margin: 0 auto;
-    }
+  #cma-single-feature-image-wrapper-1 {
+    width: 100%;
+    height: 50vw;
+    margin: 40px 0;
+  }
+  #cma-single-feature-image-wrapper-2,
+  #cma-single-feature-image-wrapper-3,
+  #cma-single-feature-image-wrapper-4,
+  #cma-single-feature-image-wrapper-5 {
+    height: 35vw;
+  }
 }

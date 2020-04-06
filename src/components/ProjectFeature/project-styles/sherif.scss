@@ -1,0 +1,27 @@
+@import "../../../styles/base.scss";
+
+#sherif-images-wrapper .single-feature-image-wrapper {
+  margin-bottom: 20px;
+}
+
+#sherif-single-feature-image-wrapper-2 {
+  height: 100vw;
+}
+
+#sherif-single-feature-image-wrapper-3 {
+  height: 75vw;
+}
+
+@include large {
+    #sherif-single-feature-image-wrapper-1 {
+    height: 40vw;
+  }
+
+  #sherif-single-feature-image-wrapper-2 {
+    height: 55vw;
+  }
+
+  #sherif-single-feature-image-wrapper-3 {
+    height: 50vw;
+  }
+}

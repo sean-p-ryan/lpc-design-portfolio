@@ -1,10 +1,27 @@
 @import "../../styles/base.scss";
 
 .feature-outer-wrapper {
+  margin-top: 40px;
+}
+
+.images-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 40px;
+}
+
+.cover .images-wrapper {
+  align-items: center;  
+}
+
+.cover .single-feature-image-wrapper {
+  height: 150vw;
+  width: 98vw;
+  background-size: contain;
+}
+
+.cover .description {
+  padding: 10px;
 }
 
 .description {
@@ -51,7 +68,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
 }
 
 .multi-image-container {
@@ -95,7 +112,43 @@
   background-image: url("../../icons/arrow-right.svg");
 }
 
+@include medium {
+  .cover .images-wrapper {
+    align-items: flex-start;  
+  }
+  
+  .cover .single-feature-image-wrapper {
+    height: 90vw;
+    width: 80vw;
+    padding-left: 40px;
+  }
+  
+  .cover .description {
+    padding-left: 40px;
+  }
+}
+
 @include large {
+  .cover .images-wrapper {
+    align-items: center;  
+    margin: 0;
+  }
+  
+  .cover .single-feature-image-wrapper {
+    height: 60vw;
+    width: 40vw;
+    padding-left: 0;
+  }
+  
+  .cover .description {
+    padding-left: 40px;
+  }
+  .feature-outer-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   .feature-outer-wrapper {
     flex-direction: row;
     align-items: flex-start;
@@ -114,11 +167,11 @@
     width: 100%;
     margin-bottom: 81px;
   }
-  .single-feature-image-wrapper {    
+  .single-feature-image-wrapper {
     height: 30vw;
   }
 
-  .multi-feature-image-wrapper {    
+  .multi-feature-image-wrapper {
     height: 30vw;
   }
 
@@ -128,9 +181,10 @@
     right: 20px;
   }
   .home {
-      display: none;
+    display: none;
   }
-  .last, .next {
-      margin: 2px;
+  .last,
+  .next {
+    margin: 2px;
   }
 }
