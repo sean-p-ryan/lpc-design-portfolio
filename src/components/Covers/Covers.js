@@ -1,10 +1,8 @@
 import React from "react";
 import ProjectPreview from "../../components/ProjectPreview/ProjectPreview";
-import { BrowserRouter as Route } from "react-router-dom";
 import coverData from "../../data/book-previews";
 import { Link } from "react-router-dom";
-import coverPreviews from "../../data/book-previews";
-import ProjectFeature from "../../components/ProjectFeature/ProjectFeature";
+import "./covers.scss";
 
 class Covers extends React.Component {
   constructor(props) {
