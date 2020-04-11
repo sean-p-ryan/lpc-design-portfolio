@@ -1,15 +1,36 @@
 @import "../../styles/base.scss";
 
-.project-title {
-  display: none;
+.overlay {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-title {    
+  @include typography-body;
+  color: white;
+  opacity: 0.0;
+}
+
+.overlay:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transition: 0.5s;
+  .project-title {
+    opacity: 1.0;
+    transition: 0.5s;
+  }
 }
 
 .project-preview-box {
+  position: static;
   width: 100vw;
   height: 75vw;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  text-decoration: none;
 }
 
 @include twoAcross {
@@ -31,19 +52,4 @@
     width: 25vw;
     height: 25vw;
   }
-}
-
-.project-preview-box:hover > .overlay {
-  display: block;
-  width: 100%;
-  height: 100%;
-  background-color: #000;
-  opacity: 0.5;
-  transition: 0.6s;
-}
-
-.project-preview-box:hover > .project-title {
-  display: block;
-  opacity: 1;
-  color: black;
 }

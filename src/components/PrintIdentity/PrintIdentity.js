@@ -10,7 +10,6 @@ class PrintIdentity extends React.Component {
   }
   handleClick(d) {
     window.location.href = "/work/" + d;
-    window.scrollTo(0, 0);
   }
   render() {
     const data = printIdentityData;

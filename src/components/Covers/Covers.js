@@ -21,7 +21,7 @@ class Covers extends React.Component {
         {Object.keys(data).map((d, i) => {
           return (
             <div onClick={() => this.handleClick()}>
-            <Link key={i} to={`/cover/${d}`}>
+            <Link className="link" key={i} to={`/cover/${d}`}>
               <ProjectPreview key={i} data={data[d]} key={i} />
             </Link>
             </div>
