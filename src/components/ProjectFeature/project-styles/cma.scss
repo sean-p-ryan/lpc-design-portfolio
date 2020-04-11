@@ -6,18 +6,16 @@
 }
 
 @include large {
-  #cma-single-feature-image-wrapper-1 {
-    width: 100%;
-    height: 50vw;
-    margin: 40px 0;
-  }
   #cma-single-feature-image-wrapper-2,
   #cma-single-feature-image-wrapper-3,
   #cma-single-feature-image-wrapper-4,
   #cma-single-feature-image-wrapper-5 {
-    height: 35vw;
-  }
-  #cma-images-wrapper .single-feature-image-wrapper {
+    height: 45vw;
     margin-bottom: 20px;
+  }
+  #cma-single-feature-image-wrapper-1 {
+    width: 100%;
+    height: 55vw;
+    margin: 40px 0 100px 0;
   }
 }
