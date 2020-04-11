@@ -68,11 +68,11 @@ class ProjectFeature extends React.Component {
             );
           })}
         </div>
-        <div className="nav-arrow-container">
+        {/* <div className="nav-arrow-container">
           <div className="last"></div>
           <div className="home"></div>
           <div className="next"></div>
-        </div>
+        </div> */}
       </div>
       </div>
     );

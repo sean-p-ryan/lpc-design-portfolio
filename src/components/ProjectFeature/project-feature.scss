@@ -10,20 +10,6 @@
   align-items: center;
 }
 
-.cover .images-wrapper {
-  align-items: center;  
-}
-
-.cover .single-feature-image-wrapper {
-  height: 150vw;
-  width: 98vw;
-  background-size: contain;
-}
-
-.cover .description {
-  padding: 10px;
-}
-
 .description {
   padding: 40px;
 }
@@ -112,19 +98,27 @@
   background-image: url("../../icons/arrow-right.svg");
 }
 
+.cover {
+  .single-feature-image-wrapper {
+    height: 130vw;
+    width: 99vw;
+    background-size: cover;
+  }
+  .images-wrapper {
+    align-items: center;
+  }
+}
+
 @include medium {
-  .cover .images-wrapper {
-    align-items: flex-start;  
-  }
-  
-  .cover .single-feature-image-wrapper {
-    height: 90vw;
-    width: 80vw;
-    padding-left: 40px;
-  }
-  
-  .cover .description {
-    padding-left: 40px;
+  .cover {
+    .single-feature-image-wrapper {
+      width: 80vw;
+      height: 110vw;
+    }
+    .images-wrapper {
+      align-items: flex-start;
+      padding-left: 20px;
+    }
   }
 }
 
@@ -148,6 +142,7 @@
     width: 53vw;
     margin-left: 5vw;
   }
+
   .multi-feature-image-wrapper,
   .single-feature-image-wrapper {
     width: 100%;
@@ -172,5 +167,16 @@
   .last,
   .next {
     margin: 2px;
+  }
+  .cover {
+    .images-wrapper {
+      margin-left: 8vw;
+      align-items: center;
+      padding: 0;
+    }
+    .single-feature-image-wrapper {
+      width: 60vw;
+      height: 70vw;      
+    }
   }
 }
