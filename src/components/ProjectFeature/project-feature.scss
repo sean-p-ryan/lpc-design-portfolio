@@ -129,20 +129,6 @@
 }
 
 @include large {
-  .cover .images-wrapper {
-    align-items: center;  
-    margin: 0;
-  }
-  
-  .cover .single-feature-image-wrapper {
-    height: 60vw;
-    width: 40vw;
-    padding-left: 0;
-  }
-  
-  .cover .description {
-    padding-left: 40px;
-  }
   .feature-outer-wrapper {
     display: flex;
     flex-direction: column;
