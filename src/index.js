@@ -16,7 +16,7 @@ class App extends React.Component {
     super(props);
     this.state = {
       coversDisplayValue: { display: "flex" },
-    };    
+    };
   }
   render() {
     return (
@@ -65,6 +65,15 @@ class App extends React.Component {
                   component={(props) => (
                     <div>
                       <ProjectFeature {...props} data={coverData} />
+                      <Covers style={this.state.coversDisplayValue} />
+                    </div>
+                  )}
+                ></Route>
+                <Route
+                  path="/cover"
+                  style={props}
+                  component={(props) => (
+                    <div>
                       <Covers style={this.state.coversDisplayValue} />
                     </div>
                   )}

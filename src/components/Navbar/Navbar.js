@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Switch } from "react-router-dom";
 import "./navbar.scss";
 
 class Navbar extends React.Component {
@@ -61,9 +61,8 @@ class Navbar extends React.Component {
           <NavLink
             onClick={this.handleClick}
             activeClassName="selected"
-            className="nav-item"
-            exact            
-            to="/"
+            className="nav-item"          
+            to={'/cover'}
           >
             COVERS
           </NavLink>
