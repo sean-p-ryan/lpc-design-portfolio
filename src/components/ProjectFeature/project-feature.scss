@@ -61,29 +61,6 @@
   height: 100%;
 }
 
-.nav-arrow-container {
-  display: flex;
-  justify-content: center;
-  height: 38px;
-  z-index: 1;
-}
-
-.last,
-.home,
-.next {
-  height: 100%;
-  width: 38px;
-  text-align: center;
-  background-color: #2e2e2e;
-  border: 1px solid black;
-  cursor: pointer;
-  background-color: black;
-  &:hover {
-    opacity: 0.5;
-  }
-  background-size: 50%;
-  z-index: 1;
-}
 
 .last {
   background-image: url("../../icons/arrow-left.svg");
